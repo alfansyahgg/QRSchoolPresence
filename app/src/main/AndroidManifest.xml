@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.application.presensitk">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PresensiTK.Clean"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.GuruUbahProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AdminLihatIzinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AdminMenuLaporanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AdminLihatPresensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GuruLihatIzinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GuruLihatPresensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LihatPresensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenuLihatPresensiActivitiy"
+            android:exported="false" />
+        <activity
+            android:name=".ui.InputGuruActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ManageGuruActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PresensiIzinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ScanPresensiPulangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MenuPresensiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ScanPresensiHadirActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BuatQRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HomeAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HomeGuruActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource"/>
+        </provider>
+    </application>
+
+</manifest>

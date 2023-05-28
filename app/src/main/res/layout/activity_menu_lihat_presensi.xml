@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MenuLihatPresensiActivitiy"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c1"
+        app:title="Menu Presensi"
+        app:titleTextColor="@color/white"
+        >
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvHadir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:rippleColor="@color/grayBg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvHadir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Lihat Presensi Hadir"
+                    android:textColor="@color/c2"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/ivHadir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_upward_24"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvPulang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:rippleColor="@color/grayBg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvPulang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Lihat Presensi Pulang"
+                    android:textColor="@color/c2"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/ivPulang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_downward_24"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvTerlambat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:rippleColor="@color/grayBg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvTerlambat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Lihat Presensi Terlambat"
+                    android:textColor="@color/c2"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/ivTerlambat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_remove_circle_24"
+                    android:layout_alignParentEnd="true"
+                    app:tint="@color/red"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvIzin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:rippleColor="@color/grayBg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvIzin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/lato"
+                    android:text="Lihat Izin"
+                    android:textColor="@color/c2"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/ivIzin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_info_24"
+                    android:layout_alignParentEnd="true"
+                    />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</LinearLayout>

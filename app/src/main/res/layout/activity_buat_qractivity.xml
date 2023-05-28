@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BuatQRActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c1"
+        app:title="Buat Presensi"
+        app:titleTextColor="@color/white"
+        >
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Jenis Presensi"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rgStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <RadioButton
+                android:id="@+id/rbHadir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hadir"
+                android:layout_marginRight="10dp"
+                />
+            <RadioButton
+                android:id="@+id/rbPulang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pulang"
+                />
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnPickDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="Select Date"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_baseline_date_range_24" />
+        <TextView
+            android:id="@+id/tvTanggalPresensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Tanggal Presensi : "
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvExpired"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Berlaku Sampai : "
+            android:textSize="18sp" />
+        
+        <ImageView
+            android:id="@+id/ivQrcode"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:text="Buat QR Code"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_baseline_qr_code_24" />
+
+    </LinearLayout>
+
+</LinearLayout>
